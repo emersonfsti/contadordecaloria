@@ -1,0 +1,92 @@
+/* Definindo variáveis de cor no nível da raiz (:root) para reutilização fácil */
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #0a0a23;
+    --fcc-blue: #1b1b32;
+    --light-yellow: #fecc4c;
+    --dark-yellow: #feac32;
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: var(--fcc-blue);
+    color: var(--light-grey);
+}
+
+/* Estilizando cabeçalhos h1 */
+h1 {
+    text-align: center;
+}
+
+/* Estilizando o container principal */
+.container {
+    width: 90%;
+    max-width: 680px;
+}
+
+/* Aplicando margens aos cabeçalhos h1, container e elementos com a classe .output */
+h1, .container, .output {
+    margin: 20px auto;
+}
+
+/* Estilizando rótulos e legendas */
+label, legend {
+    font-weight: bold;
+}
+
+/* Criando um layout de contêiner flexível para elementos de entrada */
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilizando botões */
+button {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--light-yellow);
+    border: 2px solid var(--dark-yellow);
+}
+
+/* Aplicando estilos a botões, inputs e selects */
+button, input, select {
+    min-height: 24px;
+    color: var(--dark-blue);
+}
+
+/* Adicionando margens a fieldset, label, botão, input e select */
+fieldset, label, button, input, select {
+    margin-bottom: 10px;
+}
+
+/* Estilizando a saída (output) */
+.output {
+    border: 2px solid var(--light-grey);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Classe para ocultar elementos */
+.hide {
+    display: none;
+}
+
+/* Estilizando o texto dentro da saída (output) */
+.output span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Adicionando cor ao texto em caso de excedente ou déficit */
+.surplus {
+    color: var(--light-pink);
+}
+
+.deficit {
+    color: var(--light-green);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configurando a viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na barra de título do navegador -->
+    <title>Contador de Calorias</title>
+    <!-- Link para o arquivo de estilos externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Início do conteúdo principal da página -->
+    <main>
+        <!-- Título principal da página -->
+        <h1>Contador de Calorias</h1>
+        <!-- Container para exibir o conteúdo relacionado ao contador de calorias -->
+        <div class="container">
+            <!-- Adicionando um formulário com o id "calorie-counter" -->
+            <form id="calorie-counter">
+                <!-- Seu conteúdo do formulário será adicionado aqui -->
+                <label for="budget">Budget</label>
+                <input id="budget" type="number" min="0" placeholder="Daily calorie budget" required>
+                <fieldset id="breakfast">
+                    <legend>Breakfast</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="lunch">
+                    <legend>Lunch</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="dinner">
+                    <legend>Dinner</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="snacks">
+                    <legend>Snacks</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="exercise">
+                    <legend>Exercise</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+
+                <div class="controls">
+                    <span>
+                        <label for="entry-dropdown">Add food or exercise:</label>
+                        <select id="entry-dropdown" name="options">
+                            <option value="breakfast" selected>Breakfast</option>
+                            <option value="lunch">Lunch </option>
+                            <option value="dinner">Dinner </option>
+                            <option value="snacks">Snacks </option>
+                            <option value="exercise">Exercise </option>
+                        </select>
+                        <button id="add-entry">Add Entry</button>
+                    </span>
+                </div>
+                <div>
+                    <button type="submit">Calculate Remaining Calories</button>
+                    <button id="clear" type="button">Clear</button>
+                </div>
+                <div id="output" class="output hide"> </div>
+
+            </form>
+        </div>
+    </main>
+    <!-- Fim do conteúdo principal da página -->
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
